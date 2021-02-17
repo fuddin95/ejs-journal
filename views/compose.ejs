@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid">
+<h1>Compose</h1>
+
+<form action="/compose" method="POST">
+    <div class="form-group">
+
+        <label >Title</label>
+        <input type="text" class="form-control" aria-describedby="emailHelp"
+            placeholder="Title" name="compTitle">
+
+    </div>
+    <div class="form-group">
+
+        <label for="exampleFormControlTextarea1">Post</label>
+        <textarea name="compMsg" class="form-control"  rows="5" col="30"></textarea>
+    </div>
+
+    <button type="submit" name="button" class="btn btn-primary">Publish</button>
+</form>
+</div>
+<%- include("partials/footer"); -%>
